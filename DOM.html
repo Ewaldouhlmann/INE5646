@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Árvore DOM da página index.html do projeto Camisa10.">
+  <title>Camisa10 — Árvore DOM</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logotipo Camisa10" width="40" height="40">
+        Camisa10
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#catalogo">Catálogo</a></li>
+          <li><a href="index.html#sobre">Sobre o Projeto</a></li>
+          <li><a href="index.html#equipe">Equipe</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="DOM.html" aria-current="page">Árvore DOM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="dom-wrapper">
+    <h1>Árvore DOM de <code>index.html</code></h1>
+    <p>
+      Representação hierárquica dos elementos que compõem a página inicial
+      do projeto Camisa10, do <span class="tag tag--structural">&lt;html&gt;</span>
+      raiz até os elementos de conteúdo. Estrutura semelhante ao formato de
+      árvore do DOM (Document Object Model), no qual cada nó pode conter
+      outros nós filhos.
+    </p>
+
+    <ul class="dom-tree">
+      <li>
+        <span class="tag tag--structural">&lt;html lang="pt-BR"&gt;</span>
+        <ul>
+          <li>
+            <span class="tag tag--structural">&lt;head&gt;</span>
+            <ul>
+              <li><span class="tag">&lt;meta charset="UTF-8"&gt;</span></li>
+              <li><span class="tag">&lt;meta name="viewport"&gt;</span></li>
+              <li><span class="tag">&lt;meta name="description"&gt;</span></li>
+              <li><span class="tag">&lt;title&gt;</span> <span class="tag tag--text">"Camisa10 — Loja de Camisas de Futebol"</span></li>
+              <li><span class="tag">&lt;link rel="icon"&gt;</span></li>
+              <li><span class="tag">&lt;link rel="stylesheet"&gt;</span></li>
+            </ul>
+          </li>
+          <li>
+            <span class="tag tag--structural">&lt;body&gt;</span>
+            <ul>
+              <li>
+                <span class="tag tag--structural">&lt;header&gt;</span>
+                <ul>
+                  <li>
+                    <span class="tag">&lt;div class="header-content"&gt;</span>
+                    <ul>
+                      <li>
+                        <span class="tag">&lt;a class="logo" href="#inicio"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;img&gt;</span></li>
+                          <li><span class="tag tag--text">"Camisa10"</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;nav&gt;</span>
+                        <ul>
+                          <li>
+                            <span class="tag">&lt;ul&gt;</span>
+                            <ul>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#inicio"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#catalogo"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#sobre"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#equipe"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#contato"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="DOM.html"&gt;</span></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="tag">&lt;div class="layout"&gt;</span>
+                <ul>
+                  <li>
+                    <span class="tag tag--structural">&lt;aside id="equipe"&gt;</span>
+                    <ul>
+                      <li><span class="tag">&lt;h2&gt;</span> <span class="tag tag--text">"Sobre o Grupo"</span></li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section&gt;</span> <span class="tag tag--text">Integrantes</span>
+                        <ul>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;ul&gt;</span> <span class="tag tag--text">2× &lt;li&gt;</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section&gt;</span> <span class="tag tag--text">Curso</span>
+                        <ul>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span> &gt; <span class="tag">&lt;a target="_blank"&gt;</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section&gt;</span> <span class="tag tag--text">Descrição do Projeto</span>
+                        <ul>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section&gt;</span> <span class="tag tag--text">Recursos Usados</span>
+                        <ul>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;ul&gt;</span> <span class="tag tag--text">3× &lt;li&gt;</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section&gt;</span> <span class="tag tag--text">Repositório</span>
+                        <ul>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span> &gt; <span class="tag">&lt;a target="_blank"&gt;</span>, <span class="tag">&lt;span class="badge"&gt;</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="tag tag--structural">&lt;main&gt;</span>
+                    <ul>
+                      <li>
+                        <span class="tag tag--structural">&lt;section id="inicio" class="hero"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;h1&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span></li>
+                          <li><span class="tag">&lt;a class="btn" href="#catalogo"&gt;</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section id="catalogo"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;h2&gt;</span></li>
+                          <li>
+                            <span class="tag">&lt;div class="grid-produtos"&gt;</span>
+                            <ul>
+                              <li data-node="comment">
+                                <span class="tag tag--text">6× &lt;article class="produto"&gt;</span>
+                                <ul>
+                                  <li><span class="tag">&lt;div class="jersey"&gt;</span></li>
+                                  <li><span class="tag">&lt;h3&gt;</span></li>
+                                  <li><span class="tag">&lt;p class="preco"&gt;</span></li>
+                                  <li><span class="tag">&lt;span class="badge"&gt;</span></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section id="sobre"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;h2&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span></li>
+                          <li><span class="tag">&lt;h3&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="tag tag--structural">&lt;footer id="contato"&gt;</span>
+                <ul>
+                  <li>
+                    <span class="tag">&lt;div class="footer-content"&gt;</span> <span class="tag tag--text">(1)</span>
+                    <ul>
+                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Sobre o Projeto</span></li>
+                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Objetivos</span></li>
+                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Disciplina</span></li>
+                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Links do Projeto</span></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="tag">&lt;div class="footer-content"&gt;</span> <span class="tag tag--text">(2)</span>
+                    <ul>
+                      <li><span class="tag">&lt;address&gt;</span></li>
+                    </ul>
+                  </li>
+                  <li><span class="tag">&lt;p class="copyright"&gt;</span></li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p class="copyright">&copy; 2026 Camisa10 — Projeto acadêmico INE5646, UFSC</p>
+  </footer>
+
+</body>
+</html>
