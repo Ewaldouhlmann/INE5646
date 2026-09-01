@@ -19,9 +19,9 @@
       <nav aria-label="Navegação principal">
         <ul>
           <li><a href="index.html#inicio">Início</a></li>
-          <li><a href="index.html#catalogo">Catálogo</a></li>
           <li><a href="index.html#sobre">Sobre o Projeto</a></li>
-          <li><a href="index.html#equipe">Equipe</a></li>
+          <li><a href="index.html#objetivos">Objetivos</a></li>
+          <li><a href="index.html#sobre-nos">Sobre Nós</a></li>
           <li><a href="index.html#contato">Contato</a></li>
           <li><a href="DOM.html" aria-current="page">Árvore DOM</a></li>
         </ul>
@@ -77,9 +77,9 @@
                             <span class="tag">&lt;ul&gt;</span>
                             <ul>
                               <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#inicio"&gt;</span></li>
-                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#catalogo"&gt;</span></li>
                               <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#sobre"&gt;</span></li>
-                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#equipe"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#objetivos"&gt;</span></li>
+                              <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#sobre-nos"&gt;</span></li>
                               <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="#contato"&gt;</span></li>
                               <li><span class="tag">&lt;li&gt;</span> <span class="tag">&lt;a href="DOM.html"&gt;</span></li>
                             </ul>
@@ -95,7 +95,7 @@
                 <span class="tag">&lt;div class="layout"&gt;</span>
                 <ul>
                   <li>
-                    <span class="tag tag--structural">&lt;aside id="equipe"&gt;</span>
+                    <span class="tag tag--structural">&lt;aside id="grupo-lateral"&gt;</span>
                     <ul>
                       <li><span class="tag">&lt;h2&gt;</span> <span class="tag tag--text">"Sobre o Grupo"</span></li>
                       <li>
@@ -144,36 +144,42 @@
                         <ul>
                           <li><span class="tag">&lt;h1&gt;</span></li>
                           <li><span class="tag">&lt;p&gt;</span></li>
-                          <li><span class="tag">&lt;a class="btn" href="#catalogo"&gt;</span></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="tag tag--structural">&lt;section id="catalogo"&gt;</span>
-                        <ul>
-                          <li><span class="tag">&lt;h2&gt;</span></li>
-                          <li>
-                            <span class="tag">&lt;div class="grid-produtos"&gt;</span>
-                            <ul>
-                              <li data-node="comment">
-                                <span class="tag tag--text">6× &lt;article class="produto"&gt;</span>
-                                <ul>
-                                  <li><span class="tag">&lt;div class="jersey"&gt;</span></li>
-                                  <li><span class="tag">&lt;h3&gt;</span></li>
-                                  <li><span class="tag">&lt;p class="preco"&gt;</span></li>
-                                  <li><span class="tag">&lt;span class="badge"&gt;</span></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
+                          <li><span class="tag">&lt;a class="btn" href="#sobre"&gt;</span></li>
                         </ul>
                       </li>
                       <li>
                         <span class="tag tag--structural">&lt;section id="sobre"&gt;</span>
                         <ul>
                           <li><span class="tag">&lt;h2&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span> <span class="tag tag--text">2×</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section id="objetivos"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;h2&gt;</span></li>
+                          <li><span class="tag">&lt;p&gt;</span> <span class="tag tag--text">2×</span></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tag tag--structural">&lt;section id="sobre-nos"&gt;</span>
+                        <ul>
+                          <li><span class="tag">&lt;h2&gt;</span></li>
                           <li><span class="tag">&lt;p&gt;</span></li>
-                          <li><span class="tag">&lt;h3&gt;</span></li>
-                          <li><span class="tag">&lt;p&gt;</span></li>
+                          <li>
+                            <span class="tag">&lt;div class="equipe-grid"&gt;</span>
+                            <ul>
+                              <li data-node="comment">
+                                <span class="tag tag--text">2× &lt;article class="membro"&gt;</span>
+                                <ul>
+                                  <li><span class="tag">&lt;img class="avatar"&gt;</span></li>
+                                  <li><span class="tag">&lt;h3&gt;</span></li>
+                                  <li><span class="tag">&lt;p class="matricula"&gt;</span></li>
+                                  <li><span class="tag">&lt;p&gt;</span></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -185,18 +191,10 @@
                 <span class="tag tag--structural">&lt;footer id="contato"&gt;</span>
                 <ul>
                   <li>
-                    <span class="tag">&lt;div class="footer-content"&gt;</span> <span class="tag tag--text">(1)</span>
-                    <ul>
-                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Sobre o Projeto</span></li>
-                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Objetivos</span></li>
-                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Disciplina</span></li>
-                      <li><span class="tag">&lt;section&gt;</span> <span class="tag tag--text">Links do Projeto</span></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="tag">&lt;div class="footer-content"&gt;</span> <span class="tag tag--text">(2)</span>
+                    <span class="tag">&lt;div class="footer-contact"&gt;</span>
                     <ul>
                       <li><span class="tag">&lt;address&gt;</span></li>
+                      <li><span class="tag">&lt;p class="footer-links"&gt;</span> &gt; 2× <span class="tag">&lt;a&gt;</span></li>
                     </ul>
                   </li>
                   <li><span class="tag">&lt;p class="copyright"&gt;</span></li>

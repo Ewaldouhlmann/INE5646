@@ -299,84 +299,61 @@ main h2 {
   margin-bottom: 1.5rem;
 }
 
-.grid-produtos {
+/* ==========================================================================
+   Sobre Nós (equipe)
+   ========================================================================== */
+.equipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5rem;
 }
 
-.produto {
+.membro {
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem 1rem 1.25rem;
+  padding: 1.75rem 1.25rem;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.produto:hover {
+.membro:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
 /* tinta de fundo alternada só pelo CSS, sem classes extras */
-.produto:nth-child(even) {
+.membro:nth-child(even) {
   background: #fffdf7;
 }
 
-.jersey {
-  width: 100px;
-  height: 100px;
+.avatar {
+  width: 88px;
+  height: 88px;
   margin: 0 auto 1rem;
-  clip-path: polygon(
-    30% 0%, 45% 12%, 55% 12%, 70% 0%, 100% 20%, 85% 42%,
-    75% 34%, 75% 100%, 25% 100%, 25% 34%, 15% 42%, 0% 20%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  box-shadow: var(--shadow);
 }
 
-.jersey--azul { background: linear-gradient(160deg, #1d4ed8, #0b1f66); }
-.jersey--vermelho { background: linear-gradient(160deg, #e63946, #7a0d18); }
-.jersey--dourado { background: linear-gradient(160deg, #f4b400, #8a5a00); }
-.jersey--verde { background: linear-gradient(160deg, #1f8a4c, #0b3d2e); }
-.jersey--prata { background: linear-gradient(160deg, #9aa3ad, #3c4147); }
-.jersey--roxo { background: linear-gradient(160deg, #7c3aed, #341766); }
-
-.produto h3 {
+.membro h3 {
   font-size: 1.05rem;
   margin-bottom: 0.2rem;
 }
 
-.preco {
-  font-weight: 700;
-  color: var(--color-primary);
+.matricula {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-cta);
   margin: 0 0 0.5rem;
 }
 
-.badge {
-  display: inline-block;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-muted);
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-}
-
 /* ==========================================================================
-   Sobre o projeto (conteúdo do main)
+   Objetivos (conteúdo do main)
    ========================================================================== */
-#sobre h3 {
+#objetivos strong {
   color: var(--color-cta);
-  font-size: 1.1rem;
 }
 
 /* ==========================================================================
@@ -388,35 +365,32 @@ footer {
   margin-top: 2rem;
 }
 
-.footer-content {
+.footer-contact {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
 }
 
-footer h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-accent);
-  margin-bottom: 0.6rem;
+.footer-contact address {
+  font-size: 1.05rem;
+  line-height: 1.9;
 }
 
-footer p,
-footer li {
-  font-size: 0.9rem;
-  color: #cfc9b8;
-}
-
-footer a {
+.footer-contact a {
   color: #fff;
+  font-weight: 600;
 }
 
-footer li + li {
-  margin-top: 0.35rem;
+.footer-links {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: #a9a390;
+}
+
+.footer-links a {
+  color: #a9a390;
+  font-weight: 400;
 }
 
 address {

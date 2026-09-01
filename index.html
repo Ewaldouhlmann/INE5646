@@ -19,9 +19,9 @@
       <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#inicio">Início</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
           <li><a href="#sobre">Sobre o Projeto</a></li>
-          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
           <li><a href="#contato">Contato</a></li>
           <li><a href="DOM.html">Árvore DOM</a></li>
         </ul>
@@ -31,7 +31,7 @@
 
   <div class="layout">
 
-    <aside id="equipe" aria-label="Informações do grupo">
+    <aside id="grupo-lateral" aria-label="Informações do grupo">
       <h2>Sobre o Grupo</h2>
 
       <section>
@@ -45,19 +45,15 @@
       <section>
         <h3>Curso</h3>
         <p>
-          <a href="https://sin.ufsc.br/" target="_blank" rel="noopener noreferrer">
-            Sistemas de Informação — UFSC
+          <a href="https://cco.ufsc.br/" target="_blank" rel="noopener noreferrer">
+            Ciências da Computação — UFSC
           </a>
         </p>
       </section>
 
       <section>
         <h3>Descrição do Projeto</h3>
-        <p>
-          Camisa10 é um site fictício de e-commerce voltado à venda de
-          camisas de futebol, desenvolvido como atividade avaliativa da
-          disciplina de Programação para Web.
-        </p>
+        <p>Site fictício de venda de camisas de futebol, em construção ao longo da disciplina.</p>
       </section>
 
       <section>
@@ -72,10 +68,9 @@
       <section>
         <h3>Repositório</h3>
         <p>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Ewaldouhlmann/INE5646" target="_blank" rel="noopener noreferrer">
             Repositório no GitHub
-          </a><br>
-          <span class="badge">em breve</span>
+          </a>
         </p>
       </section>
     </aside>
@@ -83,131 +78,86 @@
     <main>
 
       <section id="inicio" class="hero">
-        <h1>Vista a camisa do seu time do coração</h1>
+        <h1>Camisa10: uma loja de camisas de futebol</h1>
         <p>
-          Camisas oficiais e alternativas, com qualidade de estádio e
-          entrega para todo o Brasil. Um projeto acadêmico em construção.
+          Um projeto acadêmico que, ao longo do semestre, vai se tornar um
+          site de venda de camisas de futebol. Nesta primeira entrega,
+          apresentamos o planejamento do projeto e o grupo por trás dele.
         </p>
-        <a href="#catalogo" class="btn">Ver catálogo</a>
-      </section>
-
-      <section id="catalogo">
-        <h2>Catálogo</h2>
-        <div class="grid-produtos">
-
-          <article class="produto">
-            <div class="jersey jersey--azul" aria-hidden="true">10</div>
-            <h3>Estrela Azul FC</h3>
-            <p class="preco">R$ 249,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-          <article class="produto">
-            <div class="jersey jersey--vermelho" aria-hidden="true">9</div>
-            <h3>Tridente Vermelho</h3>
-            <p class="preco">R$ 259,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-          <article class="produto">
-            <div class="jersey jersey--dourado" aria-hidden="true">7</div>
-            <h3>Fúria Dourada</h3>
-            <p class="preco">R$ 279,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-          <article class="produto">
-            <div class="jersey jersey--verde" aria-hidden="true">5</div>
-            <h3>Leões do Sul</h3>
-            <p class="preco">R$ 239,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-          <article class="produto">
-            <div class="jersey jersey--prata" aria-hidden="true">4</div>
-            <h3>Falcões Prata</h3>
-            <p class="preco">R$ 229,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-          <article class="produto">
-            <div class="jersey jersey--roxo" aria-hidden="true">11</div>
-            <h3>Onda Roxa FC</h3>
-            <p class="preco">R$ 249,90</p>
-            <span class="badge">Em breve</span>
-          </article>
-
-        </div>
+        <a href="#sobre" class="btn">Conhecer o projeto</a>
       </section>
 
       <section id="sobre">
         <h2>Sobre o Projeto</h2>
         <p>
-          Esta página faz parte da atividade avaliativa AA2 da disciplina
-          de Programação para Web, com o objetivo de praticar a criação de
-          páginas estáticas em HTML e CSS. O tema escolhido pelo grupo foi
-          uma loja fictícia de camisas de futebol, o <strong>Camisa10</strong>,
-          que servirá de base para funcionalidades adicionadas em
-          atividades futuras da disciplina.
+          O <strong>Camisa10</strong> é o projeto web escolhido pelo grupo
+          para a disciplina de Programação para Web. A ideia é construir,
+          ao longo das atividades avaliativas, um site de e-commerce
+          fictício de camisas de futebol.
         </p>
-
-        <h3>Objetivos</h3>
         <p>
-          Aplicar elementos semânticos de HTML5, organizar o conteúdo em
-          cabeçalho, barra lateral, conteúdo principal e rodapé, além de
-          construir um layout responsivo utilizando CSS puro (Flexbox e
-          Grid), sem frameworks externos.
+          Nesta entrega (AA2), o foco é exclusivamente a estrutura estática
+          da página em HTML e CSS — por isso ainda não há catálogo de
+          produtos, carrinho de compras ou qualquer interatividade. Essas
+          funcionalidades serão incorporadas gradualmente nas próximas
+          atividades da disciplina, à medida que o conteúdo avançar para
+          JavaScript e, futuramente, um back-end.
         </p>
+      </section>
+
+      <section id="objetivos">
+        <h2>Objetivos</h2>
+        <p>
+          <strong>Desta entrega:</strong> aplicar elementos semânticos de
+          HTML5, organizar o conteúdo em cabeçalho, barra lateral,
+          conteúdo principal e rodapé, vincular uma folha de estilos
+          externa e construir um layout responsivo com CSS puro (Flexbox e
+          Grid), sem frameworks.
+        </p>
+        <p>
+          <strong>Do projeto como um todo:</strong> evoluir esta base
+          estática para um site funcional de venda de camisas de futebol,
+          com catálogo de produtos, páginas de detalhe e, eventualmente,
+          integração com um back-end.
+        </p>
+      </section>
+
+      <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Quem está por trás do projeto Camisa10:</p>
+        <div class="equipe-grid">
+
+          <article class="membro">
+            <img class="avatar" src="img/ewaldo.png" alt="Foto de Ewaldo Uhlmann Junior">
+            <h3>Ewaldo Uhlmann Junior</h3>
+            <p class="matricula">Matrícula 22200358</p>
+            <p>Estudante de Ciências da Computação na UFSC.</p>
+          </article>
+
+          <article class="membro">
+            <img class="avatar" src="img/william.png" alt="Foto de William Silveira Figueiredo">
+            <h3>William Silveira Figueiredo</h3>
+            <p class="matricula">Matrícula 21203999</p>
+            <p>Estudante de Ciências da Computação na UFSC.</p>
+          </article>
+
+        </div>
       </section>
 
     </main>
   </div>
 
   <footer id="contato">
-    <div class="footer-content">
-
-      <section>
-        <h2>Sobre o Projeto</h2>
-        <p>
-          Camisa10 é um projeto acadêmico estático que simula uma loja de
-          camisas de futebol, criado para a disciplina de Programação para
-          Web da UFSC.
-        </p>
-      </section>
-
-      <section>
-        <h2>Objetivos</h2>
-        <p>
-          Praticar HTML semântico, vinculação de CSS externo e construção
-          de layout responsivo para páginas web estáticas.
-        </p>
-      </section>
-
-      <section>
-        <h2>Disciplina</h2>
-        <p>
-          INE5646-03238A (20262)<br>
-          Programação para Web<br>
-          Universidade Federal de Santa Catarina (UFSC)
-        </p>
-      </section>
-
-      <section>
-        <h2>Links do Projeto</h2>
-        <ul>
-          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Repositório GitHub</a></li>
-          <li><a href="DOM.html">Árvore DOM da página</a></li>
-        </ul>
-      </section>
-
-    </div>
-
-    <div class="footer-content" style="padding-top:0;">
+    <div class="footer-contact">
       <address>
-        Contato do grupo:<br>
-        Ewaldo Uhlmann Junior — <a href="mailto:ewaldouhlmannjr@gmail.com">ewaldouhlmannjr@gmail.com</a><br>
-        William Silveira Figueiredo — <a href="mailto:williamsilveiraf@hotmail.com">williamsilveiraf@hotmail.com</a>
+        <a href="mailto:ewaldouhlmannjr@gmail.com">ewaldouhlmannjr@gmail.com</a><br>
+        <a href="mailto:williamsilveiraf@hotmail.com">williamsilveiraf@hotmail.com</a>
       </address>
+      <p class="footer-links">
+        <a href="https://github.com/Ewaldouhlmann/INE5646" target="_blank" rel="noopener noreferrer">GitHub</a>
+        ·
+        <a href="DOM.html">Árvore DOM</a>
+      </p>
     </div>
 
     <p class="copyright">&copy; 2026 Camisa10 — Projeto acadêmico INE5646, UFSC</p>
