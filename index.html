@@ -59,7 +59,7 @@
     <input type="text" id="myText" value="Oi">
 
     <script>
-        //adicione aqui o script para resolução do Exercício 5
+        document.getElementById("myText").value = "INE5646";
     </script>
 
 
@@ -71,7 +71,7 @@
     <p id="demo">Texto que deve ser em vermelho</p>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 6
+        document.getElementById("demo").style.color = "red";
     </script>
 
 
@@ -82,7 +82,7 @@
     <p id="demo40">Texto em 40px.</p>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 7
+        document.getElementById("demo40").style.fontSize = "40px";
     </script>
 
     <h3>Exercício 8</h3>
@@ -92,7 +92,7 @@
     <p id="demo8">Me esconda!</p>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 8
+        document.getElementById("demo8").style.display = "none";
     </script>
 
     <h3>Exercício 9</h3>
@@ -103,7 +103,11 @@
     <button id="botao1">Clique aqui</button>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 9
+        function tratadorDeClique() {
+            alert("Botão clicado!");
+        }
+
+        document.getElementById("botao1").addEventListener("click", tratadorDeClique);
     </script>
 
 
@@ -120,7 +124,9 @@
     <p id="saidaMap">Resultado do map aqui!</p>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 10
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const quadrados = numeros.map(n => n * n);
+        document.getElementById("saidaMap").textContent = quadrados.join(", ");
     </script>
 
     <h3>Exercício 11</h3>
@@ -134,7 +140,9 @@
 
 
     <script>
-        //adicione aqui o script para resolução do Exercício 11
+        const numerosFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const pares = numerosFilter.filter(n => n % 2 === 0);
+        document.getElementById("saidaFilter").textContent = pares.join(", ");
     </script>
 
     <h3>Exercício 12</h3>
@@ -148,7 +156,9 @@
     <p id="saidaReduce">Resultado do reduce aqui!</p>
 
     <script>
-        //adicione aqui o script para resolução do Exercício 12 
+        const numerosReduce = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const soma = numerosReduce.reduce((acumulador, n) => acumulador + n, 0);
+        document.getElementById("saidaReduce").textContent = soma;
     </script>
 
 </body>
