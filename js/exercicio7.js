@@ -2,7 +2,20 @@ function listarCasos() {
     let todosOsCasos = []
     //--- inclua seu algoritmo aqui ---
 
-    
+    for (let numero = 10; numero <= 99; numero++) {
+        const quadrado = (numero * numero).toString();
+
+        if (quadrado.length !== 4) {
+            continue;
+        }
+
+        const inicio = Number(quadrado.substring(0, 2));
+        const fim = Number(quadrado.substring(2, 4));
+
+        if (inicio + fim === numero) {
+            todosOsCasos.push(numero);
+        }
+    }
 
     //--- ---
     return todosOsCasos
@@ -73,5 +86,3 @@ function adicionarTodosOsCasos(todosOsCasos) {
     areaParaResultados.appendChild(table)
     
 }
-
-

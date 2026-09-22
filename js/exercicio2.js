@@ -1,7 +1,18 @@
 function tratadorDeCliqueExercicio2() {
-    // atualize esta função para
-    // exibir um alerta com a hora 
-    // atual no seguinte formato:
-    // Horário: 8 PM : 40m : 28s
-    console.log('adicionar código na função tratadorDeCliqueExercicio2() em ./js/exercicio2.js')
+    const agora = new Date();
+
+    let horas = agora.getHours();
+    const minutos = agora.getMinutes();
+    const segundos = agora.getSeconds();
+
+    const periodo = horas >= 12 ? 'PM' : 'AM';
+
+    horas = horas % 12;
+    if (horas === 0) {
+        horas = 12;
+    }
+
+    const mensagem = `Horário: ${horas} ${periodo} : ${minutos}m : ${segundos}s`;
+
+    alert(mensagem);
 }

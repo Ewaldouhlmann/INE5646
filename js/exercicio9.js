@@ -1,26 +1,50 @@
 function haOnzeDigitos(cpf) {
     //---- edite aqui para a validação do exercício 9a
-    return false
+    return cpf.length === 11
 }
 
 function todosOsOnzeDigitosSaoNumeros(cpf) {
     //---- edite aqui para a validação do exercício 9b
-    return false
+    return /^[0-9]+$/.test(cpf)
 }
 
 function osOnzeNumerosSaoDiferentes(cpf) {
     //---- edite aqui para a validação do exercício 9c
-    return false
+    return new Set(cpf).size > 1
+}
+
+function calcularDigitoVerificador(digitos) {
+    const pesoInicial = digitos.length + 1
+    let soma = 0
+
+    for (let i = 0; i < digitos.length; i++) {
+        soma += digitos[i] * (pesoInicial - i)
+    }
+
+    let resto = (soma * 10) % 11
+    if (resto === 10) {
+        resto = 0
+    }
+
+    return resto
 }
 
 function oPrimeiroDigitoVerificadorEhValido(cpf) {
     //---- edite aqui para a validação do exercício 9d
-    return false
+    const digitos = cpf.split("").map(Number)
+    const primeirosNove = digitos.slice(0, 9)
+    const digitoVerificador = digitos[9]
+
+    return calcularDigitoVerificador(primeirosNove) === digitoVerificador
 }
 
 function oSegundoDigitoVerificadorEhValido(cpf) {
     //---- edite aqui para a validação do exercício 9e
-    return false
+    const digitos = cpf.split("").map(Number)
+    const primeirosDez = digitos.slice(0, 10)
+    const digitoVerificador = digitos[10]
+
+    return calcularDigitoVerificador(primeirosDez) === digitoVerificador
 }
 
 

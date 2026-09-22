@@ -1,7 +1,11 @@
 function convertCelciusToFahrenheit(celcius) {
 	//edite esta função
 	//note que você já está recebendo o valor em celcius como parâmetro desta função
-	return "Adicione aqui o resultado da conversão"
+
+	// Realizando a conversão de Celsius para Fahrenheit
+	let fahrenheit = (celcius * 9/5) + 32;
+
+	return fahrenheit; // Retorna o valor convertido para Fahrenheit
 }
 
 
